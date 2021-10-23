@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+    <title>Cart | Fauzan Abdillah</title>
+  </head>
+
+  <body style="min-height: auto; border: 1px solid black">
+    <header style="width: 100%; border-bottom: 1px solid black">
+      <nav style="padding: 20pt; background-color: lightgrey">
+        <ul style="list-style: square; display: inline-flex">
+          <li><p class="fw-bold fs-3">LOGISTIK SITUS</p></li>
+        </ul>
+        <ul style="list-style: none; display: inline-flex;">
+          <li><a href="#">Kategori 1</a></li>
+          |
+          <li><a href="#">Kategori 2</a></li>
+          |
+          <li><a href="#">Kategori 3</a></li>
+        </ul>
+        <div style="text-align: right">
+          <ul style="list-style: none; display: Inline-flex">
+            <li style="margin-bottom: 40%;">
+              <img src="search_png-removebg-preview.png" alt="search" width="20px" />
+            </li>
+            <li style="margin-bottom: 40%">
+              <img src="cart_png-removebg-preview.png" alt="cart" width="30px" />
+            </li style="margin-bottom: 40%">
+            <li><p class="fw-bold fs-5">cart 1</p></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div>
+      <main style="min-width: 60%">
+        <div>
+          <div>
+            <ul style="list-style: none; text-align: left; margin-top: 30px">
+              <li><p class="fw-bold fs-3">Your Cart</p></li>
+            </ul>
+          </div>
+          <div>
+            <table style="min-width: 60%; margin-left: 20px; border-top: 1px solid black; border-bottom: 1px solid black">
+              <tr>
+                <th>Item</th>
+                <th>Harga</th>
+                <th>Jumlah</th>
+              </tr>
+            </table>
+            <table style="min-width: 60%; margin-left: 20px; border-top: 1px solid black; margin-bottom: 70px; border-bottom: 1px solid black">
+              <tr>
+                <th><img src="baju-removebg-preview.png" alt="Baju" width="50px" /></th>
+                <th><p>Rp.50000</p></th>
+                <th><input type="number" name="quntity" id="number" value="1" /></th>
+              </tr>
+            </table>
+            <table style="min-width: 60%; margin-left: 20px; border-bottom: 1px solid black">
+              <tr>
+                <td><p style="text-align: right">Subtotal Rp.50000</p></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </main>
+      <div style="width: 30%; height: 300px; background-color: lightgray; padding: 10px; display: grid; align-items: center; ">
+        <aside>
+          <h2>Summary (1 item)</h2>
+          <table style="width: 90%; padding: 10px; border-bottom: 2px white">
+            <tr>
+              <td>subtotal</td>
+              <td align="right">Rp.50000</td>
+            </tr>
+            <tr>
+              <td>Pengiriman</td>
+              <td align="right">Rp.6000</td>
+            </tr>
+            <tr>
+              <td>Tarif Pajak</td>
+              <td align="right">Rp.500</td>
+            </tr>
+          </table>
+          <table style="border-top: 2px white">
+            <tr>
+              <th>Kartu Hadiah atau Kode Diskon</th>
+            </tr>
+            <tr>
+              <th><input type="text" /></th>
+              <th><input type="submit" value="Apply" /></th>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th>Total</th>
+              <th>Rp.56500</th>
+            </tr>
+          </table>
+        </aside>
+      </div>
+    </div>
+
+    <footer style="border-top: 1px solid black">
+      <div class="baris" style="display: inline-flex">
+        <ul style="list-style: none">
+          <li><p class="fw-bold fs-3">Situs Logistik</p></li>
+        </ul>
+        <ul style="list-style: none; display: inline-flex">
+          <li><a href="#">Kategori X</a></li>
+          |
+          <li><a href="#">Kategori Y</a></li>
+          |
+          <li><a href="#">Kategori Z</a></li>
+        </ul>
+        <div style="text-align: right;">
+        <ul style="ruby-align: right; align-items: flex-end; list-style: none">
+          <li><p>Join Our site</p></li>
+          <li><input type="email" name="Enter Email" id="Email" /></li>
+          <li style="display: inline-flex"><input type="submit" value="subscribe" /></li>
+        </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
