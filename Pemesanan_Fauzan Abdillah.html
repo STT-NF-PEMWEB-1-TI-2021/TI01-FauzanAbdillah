@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemesanan</title>
+  </head>
+  <body>
+    <header style="margin: auto; background-color: gray; border-bottom: 1px solid black">
+      <div>
+        <ul style="display: inline-flex; list-style-type: none">
+          <li><input type="image" value="" /><img src="Panah_Kiri-removebg-preview.png" alt="left" width="30px" /></li>
+          <li><input type="image" value="" /><img src="Panah_Kanan-removebg-preview.png" alt="Panah Kanan" width="50px" /></li>
+
+          <input type="text" placeholder="search" />
+          <input type="submit" value="search" />
+        </ul>
+      </div>
+    </header>
+    <nav style="background-color: white; width: 100%; display: inline-flex; border-bottom: 1px solid black">
+      <div class="navbar">
+        <ul class="navbar" style="list-style-type: none; display: inline-flex" ALIGN="center">
+          <li style="padding: 10px">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+
+          <li style="padding: 10px">
+            <a class="nav-link" href="#">Generote Link</a>
+          </li>
+
+          <li style="padding: 10px">
+            <a class="nav-link" href="#">Transaction Histori</a>
+          </li>
+
+          <li style="padding: 10px">
+            <a class="nav-link" href="#">Policy</a>
+          </li>
+
+          <li style="padding: 10px">
+            <a class="nav-link" href="#">log out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div style="background-color: gainsboro">
+      <main>
+        <section class="picture" style="display: inline-flex">
+          <ul style="padding: 20%; list-style-type: none; margin: 1cm">
+            <li><input type="image" value="" /></li>
+            <li><input type="submit" value="upload picture" /></li>
+          </ul>
+
+          <form action="" style="margin: auto">
+            Title Here :
+            <input type="text" name="itemname" />
+
+            <br />
+
+            Description : <textarea name="description" id="" cols="30" rows="4"></textarea>
+            <br />
+            Account number : <input type="number" name="accountnumber" id="" />
+            <br />
+            Bank : <input type="text" list="bankname" name="bank" />
+            <datalist id="bankname">
+              <option value="Bank Ummat"></option>
+              <option value="Bank Study"></option>
+              <option value="Bank Kinder"></option>
+              <option value="Bank Syariat"></option>
+            </datalist>
+            <br />
+            Account Holder : <input type="text" placeholder="Name Here" aria-label="Name Here" />
+            <br />
+            <label for="Transaction">Transaction : <input type="number" name="Transaction" /></label>
+            <p>*if the transaction is for 3 person, choose 3 from the dropdown list</p>
+            <input type="checkbox" name="" id="" />Send to mobile phone <input type="checkbox" name="" id="" />Send to email
+            <br />
+            <p>Mobile Phone :<input type="number" name="" id="" /></p>
+            <br />
+            Email : <input type="email" />
+            <br />
+            <div style="margin: 20px">
+              <input type="submit" value="Generate Nabr Link" style="background-color: green" />
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
