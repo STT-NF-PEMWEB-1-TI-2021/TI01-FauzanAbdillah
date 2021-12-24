@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2kurs MU | Fauzan Abdillah</title>
+    <script>
+      function hitung() {
+        let dollar = document.getElementById("USD");
+        let rupiah = document.getElementById("IDR");
+
+        rupiah.value = dollar.value * 14650;
+      }
+    </script>
+  </head>
+  <body>
+    <fieldset style="background-color: bisque">
+      <legend>Konversi IDR - USD</legend>
+      <table>
+        <tr>
+          <th>Masukkan Nilai USD</th>
+          <th>Hitung</th>
+          <th>Nilai Rupiah</th>
+        </tr>
+        <tr>
+          <td><input type="number" value="" size="10" id="USD" /></td>
+          <td><button onclick="hitung()">Hitung</button></td>
+          <td><input type="number" value="" size="10" id="IDR" /></td>
+        </tr>
+      </table>
+    </fieldset>
+  </body>
+</html>

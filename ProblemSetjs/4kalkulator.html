@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Penjumlahan | Fauzan</title>
+    <script>
+      function count() {
+        let satu = Number(document.getElementById("bil1").value);
+        let dua = Number(document.getElementById("bil2").value);
+        let hasil = satu + dua;
+        document.getElementById("hasil").value = hasil;
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Kalkulator Penjumlahan</h3>
+    <br />
+    <input type="number" onchange="count()" value="" id="bil1" />
+    <br />
+    <h1>+</h1>
+    <br />
+    <input type="number" onchange="count()" value="" id="bil2" />
+    <br />
+    =
+    <br />
+    <input type="number" value="" id="hasil" />
+  </body>
+</html>
