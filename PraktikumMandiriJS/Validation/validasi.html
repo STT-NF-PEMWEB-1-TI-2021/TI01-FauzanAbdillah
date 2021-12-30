@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="validasi.js"></script>
+    <title>Validasi Penumpang | Fauzan</title>
+    <style>
+      body {
+        background-color: rgb(156, 120, 65);
+      }
+      .login {
+        padding: 1.5em;
+        margin: 2em 7em;
+        height: 500px;
+        width: 350px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(255, 230, 191);
+      }
+      .text {
+        text-align: center;
+      }
+      select:invalid {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex">
+      <div class="login">
+        <h3 class="text">Data Yang anda Masukkan</h3>
+        <hr />
+        <span id="data"></span>
+      </div>
+      <div class="login">
+        <h3 class="text">Masukkan Data</h3>
+        <hr />
+        <form action="#">
+          <div class="nama">
+            <label for="">Nama Anda:</label><br />
+            <input type="text" placeholder="Nama Anda..." value="" class="form-control" id="name" required max="30" style="border-radius: 10px" />
+          </div>
+          <br />
+          <div class="email">
+            <label for="">Alamat Email:</label><br />
+            <input type="email" required placeholder="Email Anda..." value="" id="email" style="border-radius: 10px" />
+          </div>
+          <br />
+          <div class="jam">
+            <label for="">Pilih Jam Keberangkatan:</label><br />
+            <input type="time" value="" id="jam" required minlength="00.00" maxlength="23.59" style="border-radius: 10px" />
+          </div>
+          <br />
+          <div class="tujuan">
+            <p>Tujuan Keberangkatan:</p>
+
+            <select id="negara" required style="border-radius: 10px">
+              <option value="-1">Pilih Keberangkatan</option>
+              <option value="Jakarta-Bandung">Jakarta-Bandung</option>
+              <option value="Jakarta-Balikpapan">Jakarta-Balikpapan</option>
+              <option value="Jakarta-Bali">Jakarta-Bali</option>
+            </select>
+          </div>
+          <br />
+          <div class="jumtiket">
+            <label for="">Jumlah Tiket</label><br />
+            <input type="number" value="" class="tiket" value="" id="tiket" required min="1" max="10" style="border-radius: 10px" />
+          </div>
+          <br />
+          <div>
+            <button onclick="kirim()" id="submit" style="background-color: rgb(49, 235, 49); border-radius: 10px">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
