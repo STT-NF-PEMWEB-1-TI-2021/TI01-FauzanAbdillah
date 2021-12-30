@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Kurs | Fauzan</title>
+    <script>
+      function hitung() {
+        let nilai = document.getElementById("amount").value;
+        let pilih = document.getElementById("select").value;
+        let hasil = 0;
+
+        if (pilih == "usd") {
+          hasil = nilai * 9915;
+        } else if (pilih == "sgd") {
+          hasil = nilai * 13472;
+        } else if (pilih == "myr") {
+          hasil = nilai * 874;
+        } else if (pilih == "jpy") {
+          hasil = nilai * 120;
+        } else if (pilih == "eur") {
+          hasil = nilai * 15888;
+        } else if (pilih == "sar") {
+          hasil = nilai * 3592;
+        }
+        document.getElementById("hasil").value = hasil;
+      }
+    </script>
+  </head>
+  <body>
+    <fieldset style="background-color: bisque">
+      <legend>Konversi MU - IDR</legend>
+      <table style="border: 1px solid black">
+        <tr>
+          <th>Masukkan Nilai</th>
+          <th>Mata Uang</th>
+          <th>Nilai Rupiah</th>
+        </tr>
+        <tr>
+          <td><input type="number" value="" id="amount" /></td>
+          <td>
+            <select id="select" onchange="hitung()">
+              <option value="usd">Dollar US</option>
+              <option value="sgd">Dollar Singapore</option>
+              <option value="myr">Ringgit</option>
+              <option value="jpy">Yen</option>
+              <option value="eur">Euro</option>
+              <option value="sar">Riyal</option>
+            </select>
+          </td>
+          <td><input type="number" value="" id="hasil" /></td>
+        </tr>
+      </table>
+    </fieldset>
+  </body>
+</html>
